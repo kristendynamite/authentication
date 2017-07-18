@@ -1,0 +1,14 @@
+{
+  "name": "authentication-example",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/kristendynamite/authentication",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

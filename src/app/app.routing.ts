@@ -1,11 +1,18 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PublicComponent } from './public/public.component';
+import { PrivateComponent } from './private/private.component';
+import { AuthGuard } from './auth-guard.service';
 
 const appRoutes: Routes = [
   {
     path: 'public',
     component: PublicComponent,
+  },
+  {
+    path: 'private',
+    component: PrivateComponent,
+    canActivate: [AuthGuard]
   }
 ];
 
